@@ -9,16 +9,16 @@ https://templatemo.com/tm-539-simple-house
 ul, nav, body, h1, h2, h4, h6, p, figure {
     margin: 0;
     padding: 0;
-  }
+}
   
-  a, button { transition: all 0.3s ease; }
+a, button { transition: all 0.3s ease; }
   
   /* Bootstrap grid system  */
   
-  html {
-    box-sizing: border-box;
-    -ms-overflow-style: scrollbar;
-  }
+html {
+  box-sizing: border-box;
+  -ms-overflow-style: scrollbar;
+}
   
   *,
   *::before,
@@ -857,68 +857,6 @@ ul, nav, body, h1, h2, h4, h6, p, figure {
     padding: 5px 20px 30px;
   }
 
-  /* Login code */
-.wrapper{
-    display: flex;
-    align-items: center;
-    flex-direction: column; 
-    justify-content: center;
-    margin-top: 3em;
-    width: 100%;
-    min-height: 100%;
-    padding: 20px;
+div.form_txtInput{
+  padding: 5em;
 }
-
-#formContent {
-    -webkit-border-radius: 10px 10px 10px 10px;
-    border-radius: 10px 10px 10px 10px;
-    background: #fff;
-    padding: 30px;
-    width: 90%;
-    max-width: 450px;
-    position: relative;
-    padding: 0px;
-    -webkit-box-shadow: 0 30px 60px 0 rgba(0,0,0,0.3);
-    box-shadow: 0 30px 60px 0 rgba(0,0,0,0.3);
-    text-align: center;
-}
-  
-#formFooter {
-    background-color: #f6f6f6;
-    border-top: 1px solid #dce8f1;
-    padding: 25px;
-    text-align: center;
-    -webkit-border-radius: 0 0 10px 10px;
-    border-radius: 0 0 10px 10px;
-}
-
-a#cancel{
-  padding-top: 30px;
-}
-
-input#textlist{
-  /* border: none; */
-  /* border-bottom: 2px solid #adadad; */
-  margin-top: 30px;
-  padding: 10px;
-  margin: 20px;
-  align-items: center;
-  justify-content: center;
-  
-}
-
-p#signtext{
-  left: auto;
-}
-
-/* div#signlist{
-  text-decoration: none;
-  text-align: center;
-  border:none;
-  width: 100%;
-  outline:none;
-  color: #586164;
-  font-size:16px;
-  height:25px;
-  background: none;
-} */
