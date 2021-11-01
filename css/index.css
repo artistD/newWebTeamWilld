@@ -1,3 +1,128 @@
-*{
+.title{
+    text-align: center;
+}
+#logo{
+    border-radius: 4px;
+}
+
+/*  */
+ #introduce{
+     display: flex;
+     flex-flow: column nowrap;
+     align-items: center;
+     background-color: lawngreen;
+     padding-top: 100px;
+     padding-bottom: 100px;
+ }
+
+#notification{
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    padding-top: 200px;
+    padding-bottom: 200px;
+    background-color: khaki;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+/* 버튼에대한 이야기임 */
+
+.btns{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-bottom: 15px;
+}
+.btn{
+    background-color: white;
+    padding: 16px 24px 16px 24px;
+    font-size: 1.1em;
+    border: none;
+    cursor: pointer;
+    border-radius: 4px;
+    box-shadow: 2px 2px 2px gray;
+    margin-left: 16px;
+    margin-top: 16px;
+    margin-bottom: 16px;
+}
+/* 이미지 어떻게 할것인지 */
+.img{
+    border-radius: 8px;
+    width: 500px;
+    margin: 15px;
+}
+.img_brand{
+    border-radius: 8px;
+    width: 300px;
+    height: 300 px;
+    margin: 15px;
+}
+
+/*  커피 원두에대한 이야기*/
+
+.bean{
+    display: flex;
+    flex-flow: row nowrap;
+    margin-left: 32px;
+    margin-right: 32px;
+    margin-bottom: 32px;
+    background-color: lightblue;
+}
+
+.bean p{
+    margin-left: 16px;
+}
+
+
+/* 여기는 제조방법에대한 이야기를 풀어내는 곳 */
+
+.ismake{
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    margin-left: 32px;
+    margin-right: 32px;
+    margin-bottom: 32px;
+    background-color: lightseagreen;
+}
+/* 브랜드에대한 이야기 */
+
+.brand{
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    margin-top: 16px;
+    margin-left: 32px;
+    margin-right: 32px;
+    background-color: mediumorchid;
+}
+
+/* 카테고리에 대한 이야기임 */
+
+
+#category_bean{
+    background: black;
+    padding-top: 32px;
+    padding-bottom: 32px;
+}
+
+#category_make{
+    background: black;
+    padding-top: 32px;
+    padding-bottom: 32px;
     
 }
+
+#category_brand{
+    display: flex;
+    background: black;
+    padding-bottom: 32px;
+    
+}
+
+.text{
+    padding: 15px;
+}
+
+
