@@ -11,6 +11,8 @@
 	<link href="css/templatemo-style.css" rel="stylesheet" />
 
     <link rel="stylesheet" href="./css/promotion_base.css">
+
+	<script src="./js/promotion_base.js"></script>
 </head>
 <!--
 
@@ -56,11 +58,11 @@ https://templatemo.com/tm-539-simple-house
             <div id="event">
                 <h2>EVENT</h2>
                 <p id="event-p1">브랜드 별 각종 이벤트를 확인해보세요 </p>
-                <select id="dropbox">
-                    <option value="1" selected>선택</option>
-                    <option value="2">스타벅스</option>
-                    <option value="3">할리스</option>
-					<option value="4">투썸플레이스</option>
+                <select id="dropbox" onchange="location.href=this.value">
+                    <option value="./promotion_base.html" selected>선택</option>
+                    <option value="./promotion_starbucks.html">스타벅스</option>
+                    <option value="./promotion_hollys.html">할리스</option>
+					<option value="./promotion_twosome.html">투썸플레이스</option>
                 </select>
             </div>
 
@@ -80,8 +82,15 @@ https://templatemo.com/tm-539-simple-house
 
             <div id="event" style="margin-top: 20px;">
                 <h2>STORY</h2>
-                <p id="event-p1">여러분의 이야기를 공유해보세요</p>
+				<div style="display: flex;">
+					<p id="event-p1">여러분의 이야기를 공유해보세요</p>
+					<div style="float: right;">
+						<h6><button id="button">게시글 등록하기</button></h6>
+					</div>
+				</div>
             </div>
+
+			
 
             
 

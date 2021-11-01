@@ -22,3 +22,27 @@
     height: 30px;
     width:120px
 }
+
+#button{
+    font-family: 'Open Sans', Arial, sans-serif;
+    color: grey;
+    background-color: white;
+    width: 180px;
+    height: 35px;
+    margin-left: 10px;
+    font-size: 18px;
+    border: solid 1.5px grey;
+    border-radius: 6px;
+}
+
+#button:hover {
+    font-family: 'Open Sans', Arial, sans-serif;
+    color: white;
+    background-color: grey;
+    width: 180px;
+    height: 35px;
+    margin-left: 10px;
+    font-size: 18px;
+    border: solid 1.5px white;
+    border-radius: 6px;
+}
