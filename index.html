@@ -5,10 +5,11 @@
 	<meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>Simple House Template</title>
+    <title>l love coffee</title>
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:400" rel="stylesheet" />    
 	<link href="css/templatemo-style.css" rel="stylesheet" />
 	<link rel="stylesheet" href="./css/index.css">
+	<script src="./js/index.js"></script>
 </head>
 <!--
 
@@ -17,9 +18,9 @@ Simple House
 https://templatemo.com/tm-539-simple-house
 
 -->
-<body> 
+<body style="background-color: black;" onload="loaded()"> 
 
-	<div class="container">
+	<div class="container" style="max-width: 1200px;">
 	<!-- Top box -->
 		<!-- Logo & Site Name -->
 		<div class="placeholder">
@@ -29,8 +30,8 @@ https://templatemo.com/tm-539-simple-house
 						<div class="col-md-6 col-12">
 							<img id="logo" src="img/coffee_logo3.jpg" alt="Logo" class="tm-site-logo" width="70" height="70"/> 
 							<div class="tm-site-text-box">
-								<h1 class="tm-site-title">I love coffee</h1>
-								<h6 class="tm-site-description">This is coffee introduction WepSite</h6>	
+								<h1 class="tm-site-title text_contents">I love coffee</h1>
+								<h6 class="tm-site-description text_contents">This is coffee introduction WepSite</h6>	
 							</div>
 						</div>
 						<nav class="col-md-6 col-12 tm-nav">
@@ -47,91 +48,124 @@ https://templatemo.com/tm-539-simple-house
 
 		<div id="wrapper">
 			<article id="introduce">
-				<h2 class="intro">Hello, this web page introduces coffee.</h2>
-				<h2 class="intro"> It's a web page.</h2>
+				<div class="text_contents_container">
+					<h2 class="intro text_contents" style="font-size: 2em;">Hello, this web page introduces coffee.</h2>
+				</div>
+				
 			</article>
 
 
 			<article id="notification">
-				<h2>What is Coffee</h2>
-				<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque rem hic eaque? Vel, sapiente, necessitatibus facere consectetur id voluptatum atque cupiditate repellat dolores dicta assumenda quidem nisi, quae tempore corporis.</p>
+				<h2 class="text_contents main_title" style="font-size: 3em;">What is Coffee</h2>
+				<div class="text_contents_container">
+					<p class="text text_contents">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ex, blanditiis iure necessitatibus ipsa, mollitia dolorum excepturi error odit rem natus assumenda unde quod velit, culpa adipisci obcaecati dolore reprehenderit sit!</p>
+				</div>
 			</article>			
 
 			<article id="category_bean">
 
 
-				<h2 class="title" style="color: white;">Beans</h2>
+				<h2 class="title main_title" style="color: white; font-size: 3em;">Beans</h2>
 
 				<article class="btns">
-					<button class="btn">primary</button>
-					<button class="btn">primary</button>
-					<button class="btn">primary</button>
+					<button class="btn" style="background-color: #BDECB6;">Arabica</button>
+					<button class="btn">Robusta</button>
+					<button class="btn">Riberica</button>
 				</article>
 
 
 				<div class="bean" id="bean_1">
-					<img class="img" src="../Day06/images/movie.jpg" alt="">
-					<p class="text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus voluptatem accusantium similique a molestiae dolores corrupti mollitia provident totam nam suscipit minima voluptates dignissimos, sunt culpa ipsum, dolorum porro error!</p>
+					<img class="img" src="./img/arabica.jpg" alt="">
+					<div class="text_contents_container">
+						<p class="text text_contents">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ex, blanditiis iure necessitatibus ipsa, mollitia dolorum excepturi error odit rem natus assumenda unde quod velit, culpa adipisci obcaecati dolore reprehenderit sit!</p>
+					</div>
 				</div>
 
 				<div class="bean" id="bean_2">
-					<img class="img" src="../Day06/images/movie.jpg" alt="">
-					<p class="text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus voluptatem accusantium similique a molestiae dolores corrupti mollitia provident totam nam suscipit minima voluptates dignissimos, sunt culpa ipsum, dolorum porro error!</p>
+					<img class="img" src="./img/robusta.jpg" alt="">
+					<div class="text_contents_container">
+						<p class="text text_contents">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ex, blanditiis iure necessitatibus ipsa, mollitia dolorum excepturi error odit rem natus assumenda unde quod velit, culpa adipisci obcaecati dolore reprehenderit sit!</p>
+					</div>
 				</div>
 
 				<div class="bean" id="bean_3">
-					<img class="img" src="../Day06/images/movie.jpg" alt="">
-					<p class="text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus voluptatem accusantium similique a molestiae dolores corrupti mollitia provident totam nam suscipit minima voluptates dignissimos, sunt culpa ipsum, dolorum porro error!</p>
+					<img class="img" src="./img/ribeyca.jpg" alt="">
+					<div class="text_contents_container">
+						<p class="text text_contents">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ex, blanditiis iure necessitatibus ipsa, mollitia dolorum excepturi error odit rem natus assumenda unde quod velit, culpa adipisci obcaecati dolore reprehenderit sit!</p>
+					</div>
 				</div>
 
 			</article>
 			
 			<article id="category_make">
-				<h2 class="title" style="color: white;">Coffee making</h2>
+				<h2 class="title main_title" style="color: white; font-size: 3em;">Coffee making</h2>
 				<article class="btns">
-					<button class="btn">primary</button>
-					<button class="btn">primary</button>
-					<button class="btn">primary</button>
+					<button class="btn" style="background-color: #BDECB6;">프렌치프렛스</button>
+					<button class="btn">모카포트</button>
+					<button class="btn">콜드블루</button>
 				</article>
 				
 				<div class="ismake" id="make_1">
-					<p class="text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus voluptatem accusantium similique a molestiae dolores corrupti mollitia provident totam nam suscipit minima voluptates dignissimos, sunt culpa ipsum, dolorum porro error!</p>
-					<img class="img" src="../Day06/images/movie.jpg" alt="">
+					<div class="text_contents_container">
+						<p class="text text_contents make_text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ex, blanditiis iure necessitatibus ipsa, mollitia dolorum excepturi error odit rem natus assumenda unde quod velit, culpa adipisci obcaecati dolore reprehenderit sit!</p>
+					</div>
+					<img class="img make_img" src="./img/press.jpg" alt="">
 				</div>
 
 				<div class="ismake" id="make_2">
-					<p class="text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus voluptatem accusantium similique a molestiae dolores corrupti mollitia provident totam nam suscipit minima voluptates dignissimos, sunt culpa ipsum, dolorum porro error!</p>
-					<img class="img" src="../Day06/images/movie.jpg" alt="">
+					<div class="text_contents_container">
+						<p class="text text_contents make_text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ex, blanditiis iure necessitatibus ipsa, mollitia dolorum excepturi error odit rem natus assumenda unde quod velit, culpa adipisci obcaecati dolore reprehenderit sit!</p>
+					</div>
+					<img class="img make_img" src="./img/hand.jpg" alt="">
 				</div>
 
 				<div class="ismake" id="make_3">
-					<p class="text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus voluptatem accusantium similique a molestiae dolores corrupti mollitia provident totam nam suscipit minima voluptates dignissimos, sunt culpa ipsum, dolorum porro error!</p>
-					<img class="img" src="../Day06/images/movie.jpg" alt="">
+					<div class="text_contents_container">
+						<p class="text text_contents make_text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ex, blanditiis iure necessitatibus ipsa, mollitia dolorum excepturi error odit rem natus assumenda unde quod velit, culpa adipisci obcaecati dolore reprehenderit sit!</p>
+					</div>
+					<img class="img make_img" src="./img/coldbluejpg.jpg" alt="">
 				</div>
 			</article>
 
 
-			<h2 class="title" style="background-color: black; color: white;">Coffee Brand</h2>
 			<article id="category_brand">
-
-				<div class="brand">
-					<h3 style="margin: 8px 0px 0px 0px;">StarBucks</h3>
-					<img class="img_brand" src="./img/startbucks_fianal.jpg" alt="">
-					<p class="text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Soluta veniam sequi veritatis laudantium quis voluptatum, ipsum, dolorem eius est iure dolor maxime illo eaque harum sed. Voluptatem a velit beatae.</p>
-					
+				<h2 class="title main_title" style="color: white; font-size: 3em;">Coffee Brand</h2>
+				<div id="brand_container">
+					<div class="brand">
+						<h3 style="margin: 8px 0px 0px 0px; font-size: 2em; color: white;">StarBucks</h3>
+						<a href="https://www.starbucks.co.kr/index.do">
+							<img class="img_brand" src="./img/startbucks_fianal.jpg" alt="">
+						</a>
+						<div class="text_contents_container">
+							<p class="text text_contents">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ex, blanditiis iure necessitatibus ipsa, mollitia dolorum excepturi error odit rem natus assumenda unde quod velit, culpa adipisci obcaecati dolore reprehenderit sit!</p>
+						</div>
+						
+						
+					</div>
+	
+					<div class="brand">	
+						<h3 style="margin: 8px 0px 0px 0px; font-size: 2em; color: white;">Hollys</h3>
+						<a href="https://www.hollys.co.kr/">
+							<img class="img_brand" src="./img/hollys.jpg" alt="">
+						</a>
+						<div class="text_contents_container">
+							<p class="text text_contents">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consequatur laboriosam aspernatur reiciendis quo quisquam blanditiis qui asperiores voluptate, aliquam rerum optio quasi, ducimus ex similique consectetur repudiandae perferendis, cumque ipsum!</p>
+						</div>
+						
+					</div>
+	
+					<div class="brand">	
+						<h3 style="margin: 8px 0px 0px 0px; font-size: 2em; color: white;">Twosome place</h3>
+						<a href="https://www.twosome.co.kr/main.do">
+							<img class="img_brand" src="./img/twosomeplace2.jpg" alt="">
+						</a>
+						<div class="text_contents_container">
+							<p class="text text_contents">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aliquid accusantium dolor praesentium ab, maxime asperiores corrupti dignissimos. Reiciendis, dolorem eum? Veritatis quo, ducimus quisquam libero harum perspiciatis sunt pariatur cumque?</p>
+						</div>
+						
+					</div>
 				</div>
-
-				<div class="brand">	
-					<h3 style="margin: 8px 0px 0px 0px;">Hollys</h3>
-					<img class="img_brand" src="./img/hollys.jpg" alt="">
-					<p class="text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Soluta veniam sequi veritatis laudantium quis voluptatum, ipsum, dolorem eius est iure dolor maxime illo eaque harum sed. Voluptatem a velit beatae.</p>
-				</div>
-
-				<div class="brand">	
-					<h3 style="margin: 8px 0px 0px 0px;">Twosome place</h3>
-					<img class="img_brand" src="./img/twosomeplace2.jpg" alt="">
-					<p class="text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Soluta veniam sequi veritatis laudantium quis voluptatum, ipsum, dolorem eius est iure dolor maxime illo eaque harum sed. Voluptatem a velit beatae.</p>
-				</div>
+				
 
 			</article>
 			
