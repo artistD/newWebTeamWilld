@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Sign up</title>
+
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400" rel="stylesheet" />
+        <link href="css/all.min.css" rel="stylesheet" />
+	    <link href="css/signup-style.css" rel="stylesheet" />
+    </head>
+
+    <body>
+        
+        <div class="container">
+            <!-- Top box -->
+                <!-- Logo & Site Name -->
+                <div class="placeholder">
+                    <div class="parallax-window" data-parallax="scroll" data-image-src="./img/coffeebackground.jpg">
+                        <div class="tm-header">
+                            <div class="row tm-header-inner">
+                                <div class="col-md-6 col-12">
+                                  <img src="img/coffee_logo3.jpg" alt="Logo" class="tm-site-logo" width="70" height="70"/> 
+                                  <div class="tm-site-text-box">
+                                        <h1 class="tm-site-title">I love coffee</h1>
+                                        <h6 class="tm-site-description">This is sign up Wepsite</h6>	
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="signupclass">
+                    <div class="container">
+                      <div class="form_txtInput">
+                        <h2 class="sub_tit_txt">회원가입</h2>
+                        <hr>
+                        <div class="join_form">
+                          <table>
+                            <colgroup>
+                              <col width="30%"/>
+                              <col width="auto"/>
+                            </colgroup>
+                            <form action="./signup.php" method="post" enctype="application/x-www-form-urlencoded">
+                              <tbody>
+                                <tr>
+                                  <th><span>아이디</span></th>
+                                  <td><input name="id" type="text" placeholder="ID 를 입력하세요."></td>
+                                </tr>
+                                <tr>
+                                  <th><span>이름</span></th>
+                                  <td><input name="name" type="text" placeholder=""></td>
+                                </tr>
+                                <tr>
+                                  <th><span>비밀번호</span></th>
+                                  <td><input name="pw" type="password" placeholder="비밀번호를 입력해주세요."></td>
+                                </tr>
+                                <tr class="email">
+                                  <th><span>이메일</span></th>
+                                  <td>
+                                    <input name="email_1" type="text"  class="email" placeholder=""><span class="mar10">@</span>
+                                    <input name="email_2" type="text"  class="email email2" placeholder="">
+                                  </td>
+                                </tr>
+                                <tr>
+                                  <th><span>휴대폰 번호</span></th>
+                                  <td><input name="tel" type="text" placeholder="전화번호를 입력하세요."></td>
+                                </tr>
+                              </tbody>
+                            
+                            
+                          </table>
+                          <div class="exform_txt"><span>표시는 필수적으로 입력해주셔야 가입이 가능합니다.</span></div>
+                        </div><!-- join_form E  -->
+                        <div class="btn_wrap">
+                          <input type="submit" id="signupbtn" value="회원가입">
+                        </div>
+                      </form>
+                      </div> <!-- form_txtInput E -->
+                    </div><!-- content E-->
+                </div> <!-- container E -->
+
+    </body>
+
+</html>
