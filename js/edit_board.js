@@ -4,3 +4,4 @@ function checkImage(){
     fr.onload = ()=>{document.getElementById('selectImage').src = fr.result;}
     fr.readAsDataURL(files[0]);
 }
+

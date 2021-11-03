@@ -26,9 +26,12 @@
     $result = mysqli_query($conn, $sql);
 
     if ($result){
-        echo ("<script>alert(게시글 등록에 성공했습니다.);</script>");
+        echo "<script>
+                alert('게시글 등록에 성공했습니다')
+		        location.href = 'http://mky1428.dothome.co.kr/TeamProject/WebpageTeam/edit_board.html'
+	         </script>";
     }else{
-        echo ("<script>alert(게시글 등록에 실패했습니다.);</script>");
+        echo ("게시글 등록 실패");
     }
     mysqli_close($conn);
 

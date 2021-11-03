@@ -23,6 +23,55 @@
     width:120px
 }
 
+#brannd_logo_image {
+    margin-top: 30px;
+    margin-left: 70px;
+}
+
+#hollys_event{
+    font-family: 'Open Sans', Arial, sans-serif;
+    width: max-content;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#hollys_event1{
+    width: 700px;
+    height: 140px;
+}
+
+#div_inline_block {
+    display: flex;
+    color: red;
+}
+
+#starbucks {
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 30px;
+}
+
+#starbucks_img1 {
+    width: 250px;
+    height: 200px;
+}
+
+#aaa p{
+    margin-left: 15px;    
+    margin-top: 5px;
+    font-size: 0.8em;
+}
+
+#p2 {
+    font-size: 0.7em;
+}
+
+#p3 {
+    font-size: 0.8em;
+    color: red;
+}
+
 #button{
     font-family: 'Open Sans', Arial, sans-serif;
     color: grey;
@@ -47,7 +96,6 @@
     border-radius: 6px;
 }
 
-
 #table {
     margin-left: auto;
     margin-right: auto;
@@ -62,17 +110,25 @@
 
 #th1{
     width: 20%;
-    background-color: brown;
+    background-color: rgb(233, 146, 66);
 }
 
 #th2{
-    background-color: brown;
+    background-color: rgb(233, 146, 66);
 }
 
 tr:nth-child(odd){
     background-color: burlywood;
+    text-align: center;
 }
 
-tr:nth-child(even){
-    background-color: rgb(190, 142, 78);
+@media (max-width: 640px){
+    #aaa{
+        flex-direction: column;
+    }
+
+    #button{
+        margin-top: 10px;
+        margin-right: 10px;
+    }
 }

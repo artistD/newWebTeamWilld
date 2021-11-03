@@ -62,17 +62,27 @@
 
 #th1{
     width: 20%;
-    background-color: brown;
+    background-color: rgb(233, 146, 66);
 }
 
 #th2{
-    background-color: brown;
+    background-color: rgb(233, 146, 66);
 }
 
 tr:nth-child(odd){
     background-color: burlywood;
+    text-align: center;
 }
 
-tr:nth-child(even){
-    background-color: rgb(190, 142, 78);
+
+
+@media (max-width: 640px){
+    #aaa{
+        flex-direction: column;
+    }
+
+    #button{
+        margin-top: 10px;
+        margin-right: 10px;
+    }
 }

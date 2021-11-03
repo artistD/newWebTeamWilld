@@ -10,9 +10,9 @@
     <link href="css/all.min.css" rel="stylesheet" />
 	<link href="css/templatemo-style.css" rel="stylesheet" />
 
-    <link rel="stylesheet" href="./css/promotion_hollys.css">
+    <link rel="stylesheet" href="./css/bbb.css">
 
-	<script src="./js/promotion_hollys.js"></script>
+	<script src="./js/bbb.js"></script>
 </head>
 <!--
 
@@ -21,27 +21,27 @@ Simple House
 https://templatemo.com/tm-539-simple-house
 
 -->
-<body> 
+<body onload="loaded()"> 
 
 	<div class="container">
 	<!-- Top box -->
 		<!-- Logo & Site Name -->
 		<div class="placeholder">
-			<div class="parallax-window" data-parallax="scroll" data-image-src="img/simple-house-01.jpg">
+			<div class="parallax-window" data-parallax="scroll" data-image-src="./img/main1.jpg">
 				<div class="tm-header">
 					<div class="row tm-header-inner">
 						<div class="col-md-6 col-12">
-							<img src="img/simple-house-logo.png" alt="Logo" class="tm-site-logo" /> 
+							<img id="logo" src="./img/logo.jpg" alt="Logo" class="tm-site-logo" width="70" height="70"/>  
 							<div class="tm-site-text-box">
-								<h1 class="tm-site-title">Simple House</h1>
-								<h6 class="tm-site-description">new restaurant template</h6>	
+								<h1 class="tm-site-title">I love coffee</h1>
+								<h6 class="tm-site-description">This is coffee introduction Wepsite</h6>	
 							</div>
 						</div>
 						<nav class="col-md-6 col-12 tm-nav">
 							<ul class="tm-nav-ul">
-								<li class="tm-nav-li"><a href="index.html" class="tm-nav-link">Home</a></li>
-								<li class="tm-nav-li"><a href="about.html" class="tm-nav-link active">About</a></li>
-								<li class="tm-nav-li"><a href="./edit_board.html" class="tm-nav-link">Contact</a></li>
+								<li class="tm-nav-li"><a href="index.html" class="tm-nav-link">지도</a></li>
+								<li class="tm-nav-li"><a href="about.html" class="tm-nav-link active">게시판</a></li>
+								<li class="tm-nav-li"><a href="./edit_board.html" class="tm-nav-link">로그인</a></li>
 							</ul>
 						</nav>	
 					</div>
@@ -52,7 +52,7 @@ https://templatemo.com/tm-539-simple-house
 		<main>
 			<header class="row tm-welcome-section">
 				<h1 id="promotion">Promotion</h1>
-				
+				<p class="col-12 text-center">커피브랜드 별 진행중인 최신이벤트와 여러 소식들을 확인해보세요</p>
 			</header>
 
             <div id="event">
@@ -115,7 +115,7 @@ https://templatemo.com/tm-539-simple-house
 
             <div id="event" style="margin-top: 20px;">
                 <h2>STORY</h2>
-				<div style="display: flex;">
+				<div id="aaa" style="display: flex;">
 					<p id="event-p1">여러분의 이야기를 공유해보세요</p>
 					<div style="float: right;">
 						<h6><button id="button" onclick="editmove()">게시글 등록하기</button></h6>
@@ -123,85 +123,17 @@ https://templatemo.com/tm-539-simple-house
 				</div>
             </div>
 
+			<table border="1" id="table">
+				<tr>
+						<th id="th1">no</th>
+						<th id="th2">제목</th>
+				</tr>
+	
+					
+			</table>
+
             
 
-			<div style="margin-top: 300px;" class="tm-container-inner tm-persons">
-				<div class="row">
-					<article class="col-lg-6">
-						<figure class="tm-person">
-							<img src="img/about-01.jpg" alt="Image" class="img-fluid tm-person-img" />
-							<figcaption class="tm-person-description">
-								<h4 class="tm-person-name">Jennifer Soft</h4>
-								<p class="tm-person-title">Founder and CEO</p>
-								<p class="tm-person-about">Vivamus cursus leo nec sem feugiat sagittis.
-								Duis ut feugiat odio, sit amet accumsan
-								odio.</p>
-								<div>
-									<a href="https://fb.com" class="tm-social-link"><i class="fab fa-facebook tm-social-icon"></i></a>
-									<a href="https://twitter.com" class="tm-social-link"><i class="fab fa-twitter tm-social-icon"></i></a>
-									<a href="https://instagram.com" class="tm-social-link"><i class="fab fa-instagram tm-social-icon"></i></a>
-								</div>
-							</figcaption>
-						</figure>
-					</article>
-					<article class="col-lg-6">
-						<figure class="tm-person">
-							<img src="img/about-02.jpg" alt="Image" class="img-fluid tm-person-img" />
-							<figcaption class="tm-person-description">
-								<h4 class="tm-person-name">Daisy Walker</h4>
-								<p class="tm-person-title">Executive Chef</p>
-								<p class="tm-person-about">Praesent non vulputate elit. Orci varius
-								natoque et magnis dis parturient, nascetur ridiculus mus.</p>
-								<div>
-									<a href="https://fb.com" class="tm-social-link"><i class="fab fa-facebook tm-social-icon"></i></a>
-									<a href="https://twitter.com" class="tm-social-link"><i class="fab fa-twitter tm-social-icon"></i></a>
-								</div>
-							</figcaption>
-						</figure>
-					</article>
-					<article class="col-lg-6">
-						<figure class="tm-person">
-							<img src="img/about-03.jpg" alt="Image" class="img-fluid tm-person-img" />
-							<figcaption class="tm-person-description">
-								<h4 class="tm-person-name">Florence Nelson</h4>
-								<p class="tm-person-title">Kitchen Manager</p>
-								<p class="tm-person-about">Aenean sapien sem, ultricies sed vulputate
-								et, auctor vel mauris. Integer sit amet diam eget est facilisis lacinia vitae.</p>
-								<div>
-									<a href="https://fb.com" class="tm-social-link"><i class="fab fa-facebook tm-social-icon"></i></a>
-									<a href="https://instagram.com" class="tm-social-link"><i class="fab fa-instagram tm-social-icon"></i></a>
-								</div>
-							</figcaption>
-						</figure>
-					</article>
-					<article class="col-lg-6">
-						<figure class="tm-person">
-							<img src="img/about-04.jpg" alt="Image" class="img-fluid tm-person-img" />
-							<figcaption class="tm-person-description">
-								<h4 class="tm-person-name">Valentina Martin</h4>
-								<p class="tm-person-title">Culinary Director</p>
-								<p class="tm-person-about">Praesent non vulputate elit. Orci varius
-								natoque penatibus et magnis montes, nascetur ridiculus mus.</p>
-								<div>
-									<a href="https://fb.com" class="tm-social-link"><i class="fab fa-facebook tm-social-icon"></i></a>
-									<a href="https://twitter.com" class="tm-social-link"><i class="fab fa-twitter tm-social-icon"></i></a>
-									<a href="https://instagram.com" class="tm-social-link"><i class="fab fa-instagram tm-social-icon"></i></a>
-									<a href="https://youtube.com" class="tm-social-link"><i class="fab fa-youtube tm-social-icon"></i></a>
-								</div>
-							</figcaption>
-						</figure>
-					</article>
-				</div>
-			</div>
-			<div class="tm-container-inner tm-featured-image">
-				<div class="row">
-					<div class="col-12">
-						<div class="placeholder-2">
-							<div class="parallax-window-2" data-parallax="scroll" data-image-src="img/about-05.jpg"></div>		
-						</div>
-					</div>
-				</div>
-			</div>
 			<div class="tm-container-inner tm-features">
 				<div class="row">
 					<div class="col-lg-4">
@@ -231,9 +163,9 @@ https://templatemo.com/tm-539-simple-house
 				<div class="row">
 					<div class="col-12">
 						<div class="tm-history-inner">
-							<img src="img/about-06.jpg" alt="Image" class="img-fluid tm-history-img" />
+							<img src="./img/coffee11111.jpg" alt="Image" class="img-fluid tm-history-img" />
 							<div class="tm-history-text"> 
-								<h4 class="tm-history-title">History of our restaurant</h4>
+								<h4 class="tm-history-title">History of our coffee</h4>
 								<p class="tm-mb-p">Sed ligula risus, interdum aliquet imperdiet sit amet, auctor sit amet justo. Maecenas posuere lorem id augue interdum vehicula. Praesent sed leo eget libero ultricies congue.</p>
 								<p>Redistributing this template as a downloadable ZIP file on any template collection site is strictly prohibited. You will need to <a href="https://templatemo.com/contact">contact TemplateMo</a> for additional permissions about our templates. Thank you.</p>
 							</div>
