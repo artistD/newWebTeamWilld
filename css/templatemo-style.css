@@ -150,6 +150,7 @@ html {
 .tm-btn-success {
   background-color: #319966;
   color: white;
+  border-radius: 4px;
 }
 
 .tm-btn-success:hover,
@@ -649,7 +650,7 @@ p, address {
 
 .form-control {
   display: block;
-  width: 100%;
+  width: 400px;
   padding: 0.375rem 0.75rem;
   font-size: 1.1rem;
   font-weight: 400;
@@ -851,6 +852,7 @@ address {
 .panel p {
   padding: 5px 20px 30px;
 }
+<<<<<<< HEAD
 
 /* Login code */
 .wrapper{
@@ -996,3 +998,5 @@ input[type=password]:placeholder {
   color: #cccccc;
 }
 
+=======
+>>>>>>> maeng

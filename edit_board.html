@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Simple House - Contact Page</title>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400" rel="stylesheet" />
+    <link href="css/all.min.css" rel="stylesheet" />
+	<link href="css/templatemo-style.css" rel="stylesheet" />
+
+    <link rel="stylesheet" href="./css/edit_board.css">
+
+    <script src="./js/edit_board.js"></script>
+</head>
+
+<body style="background-color: black;"> 
+
+	<div class="container">
+
+		<div class="placeholder">
+			<div class="parallax-window" data-parallax="scroll" data-image-src="./img/main1.jpg">
+				<div class="tm-header">
+					<div class="row tm-header-inner">
+						<div class="col-md-6 col-12">
+							<img id="logo" src="./img/logo.jpg" alt="Logo" class="tm-site-logo" width="70" height="70"/> 
+							<div class="tm-site-text-box">
+								<h1 class="tm-site-title">I love coffee</h1>
+								<h6 class="tm-site-description">This is coffee introduction Wepsite</h6>	
+							</div>
+						</div>
+						<nav class="col-md-6 col-12 tm-nav">
+							<ul class="tm-nav-ul">
+								<li class="tm-nav-li"><a href="index.html" class="tm-nav-link">지도</a></li>
+								<li class="tm-nav-li"><a href="./promotion_base.html" class="tm-nav-link">게시판</a></li>
+								<li class="tm-nav-li"><a href="contact.html" class="tm-nav-link active">로그인</a></li>
+							</ul>
+						</nav>	
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<main>
+			<header class="row tm-welcome-section">
+				<h2 class="col-12 text-center tm-section-title">Registration Page</h2>
+				<p class="col-12 text-center">나의 커피 이야기를 소개해보세요</p>
+			</header>
+			<form action="./insertDB.php" method="post" enctype="multipart/form-data">
+				<div class="tm-container-inner-2 tm-contact-section">
+					<div class="row">
+	
+						<div class="col-md-6">
+								<div class="form-group">
+								  <input type="text" name="title" class="form-control" placeholder="제목" required="" />
+								</div>
+					
+								<div class="form-group">
+								  <textarea rows="5" name="msg" class="form-control" placeholder="내용" required=""></textarea>
+								</div>
+	
+						</div>
+	
+						<div class="col-md-6">
+								<img id="selectImage" src="./img/111.png">
+						</div>
+					</div>
+				</div>
+	
+				<div style="display: flex; justify-content: center;">
+					<div class="form-group tm-d-flex" style="margin-right: 20px;">
+						<div class="filebox">
+							<label for="ex_file">사진 선택</label>
+							<input type="file" id="ex_file" name="file" accept="image/*">
+						</div>
+					</div>
+	
+					<div class="form-group tm-d-flex">
+						<button class="tm-btn tm-btn-success tm-btn-right" onclick="checkImage()">
+						  사진 미리보기
+						</button>
+					</div>
+		
+					<div class="form-group tm-d-flex" style= "margin-left: 20px;">
+						<input class="tm-btn tm-btn-success tm-btn-right" type="submit" value="등록">
+					</div>
+				</div>
+			</form>
+			
+			
+	
+
+		<footer class="tm-footer text-center">
+			<p>Copyright &copy; 2020 Simple House 
+            
+            | Design: <a rel="nofollow" href="https://templatemo.com">TemplateMo</a></p>
+		</footer>
+	</div>
+	<script src="js/jquery.min.js"></script>
+	<script src="js/parallax.min.js"></script>
+	<script>
+		$(document).ready(function(){
+			var acc = document.getElementsByClassName("accordion");
+			var i;
+			
+			for (i = 0; i < acc.length; i++) {
+			  acc[i].addEventListener("click", function() {
+			    this.classList.toggle("active");
+			    var panel = this.nextElementSibling;
+			    if (panel.style.maxHeight) {
+			      panel.style.maxHeight = null;
+			    } else {
+			      panel.style.maxHeight = panel.scrollHeight + "px";
+			    }
+			  });
+			}	
+		});
+	</script>
+</body>
+</html>

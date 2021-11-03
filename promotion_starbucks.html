@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Simple House - About Page</title>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400" rel="stylesheet" />
+    <link href="css/all.min.css" rel="stylesheet" />
+	<link href="css/templatemo-style.css" rel="stylesheet" />
+
+    <link rel="stylesheet" href="./css/ccc.css">
+
+	<script src="./js/ccc.js"></script>
+</head>
+<!--
+
+Simple House
+
+https://templatemo.com/tm-539-simple-house
+
+-->
+<body onload="loaded()" style="background-color: black;"> 
+
+	<div class="container">
+	<!-- Top box -->
+		<!-- Logo & Site Name -->
+		<div class="placeholder">
+			<div class="parallax-window" data-parallax="scroll" data-image-src="./img/main1.jpg">
+				<div class="tm-header">
+					<div class="row tm-header-inner">
+						<div class="col-md-6 col-12">
+							<img id="logo" src="./img/logo.jpg" alt="Logo" class="tm-site-logo" width="70" height="70"/>  
+							<div class="tm-site-text-box">
+								<h1 class="tm-site-title">I love coffee</h1>
+								<h6 class="tm-site-description">This is coffee introduction Wepsite</h6>	
+							</div>
+						</div>
+						<nav class="col-md-6 col-12 tm-nav">
+							<ul class="tm-nav-ul">
+								<li class="tm-nav-li"><a href="index.html" class="tm-nav-link">지도</a></li>
+								<li class="tm-nav-li"><a href="about.html" class="tm-nav-link active">게시판</a></li>
+								<li class="tm-nav-li"><a href="./edit_board.html" class="tm-nav-link">로그인</a></li>
+							</ul>
+						</nav>	
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<main>
+			<header class="row tm-welcome-section">
+				<h1 id="promotion">Promotion</h1>
+				<p class="col-12 text-center">커피브랜드 별 진행중인 최신이벤트와 여러 소식들을 확인해보세요</p>
+			</header>
+
+            <div id="event">
+                <h2>EVENT</h2>
+                <p id="event-p1">브랜드 별 각종 이벤트를 확인해보세요 </p>
+                <select id="dropbox" onchange="location.href=this.value">
+                    <option value="./promotion_base.html">선택</option>
+                    <option value="./promotion_starbucks.html" selected>스타벅스</option>
+                    <option value="./promotion_hollys.html">할리스</option>
+					<option value="./promotion_twosome.html">투썸플레이스</option>
+                </select>
+            </div>
+
+            <hr style="margin-top: 20px; width: 95%;">
+
+            <div style="display: flex;">
+                <div id="brannd_logo_image">
+                    <div style="width: 160px;">
+                        <img src="./img/brand_logo_starbucks.png" width="150px" height="150px" style="margin-left: 10px;">
+                        <p style="font-size: 15px; margin-top: 10px; margin-left: 5px;">스타벅스에서 진행중인 최신이벤트를 확인해보세요</p>
+                    </div>
+                </div>
+
+                
+                <div id="starbucks">
+                    <div style="display: flex;" onclick="eventmove()">
+                        <img id="starbucks_img1" src="./img/starbucks1.jpg">
+                        
+                        <div id="aaa">
+                            <p id="p1"><strong>기존 매장 이벤트</strong></p>
+                            <p id="p2">2018-04-04 ~ 2021-10-28</p>
+                            <p id="p3"><strong>세종어진R</strong></p>
+                            <p id="p4">리저브 제품,상품포함 3만원 이상 구매 고객에게 에코백(증정상품) 선착순 300개 증정</p>
+                            <p id="p5">이벤트 대상 품목 :리저브 음료, 원두, MD(머그,텀블러,글라스,드리퍼,프레스 등</p>
+                         </div>
+                    </div>
+                    
+                    <hr style="margin-top: 20px;">
+
+                    <div style="display: flex; margin-top: 20px;" onclick="eventmove()">
+                        <img id="starbucks_img1" src="./img/starbucks2.jpg">
+                        
+                        <div id="aaa">
+                            <p id="p1"><strong>[대구칠성이마트] 오픈 이벤트</strong></p>
+                            <p id="p2">2021-07-08 ~ 2021-07-09</p>
+                            <p id="p3"><strong>대구칠성이마트</strong></p>
+                            <p id="p4">푸드포함 15,000원이상 구매 고객에게 로고머그 증정(Tall Size), (요거트, 병음료,Grab&GO,바나나 제외)</p>
+                         </div>
+                    </div>
+
+                    <hr style="margin-top: 20px;">
+
+                    <div style="display: flex; margin-top: 20px;" onclick="eventmove()">
+                        <img id="starbucks_img1" src="./img/starbucks3.jpg">
+                        
+                        <div id="aaa">
+                            <p id="p1"><strong>[창원내서] 오픈 이벤트</strong></p>
+                            <p id="p2">2021-07-08 ~ 2021-07-08</p>
+                            <p id="p3"><strong>창원내서</strong></p>
+                            <p id="p4">리저브 제품,상품포함 3만원 이상 구매 고객에게 에코백(증정상품) 선착순 300개 증정</p>
+                         </div>
+                    </div>
+
+                    <hr style="margin-top: 20px;">
+
+                    <div style="display: flex; margin-top: 20px;" onclick="eventmove()">
+                        <img id="starbucks_img1" src="./img/starbucks4.jpg">
+                        
+                        <div id="aaa">
+                            <p id="p1"><strong>오픈이벤트</strong></p>
+                            <p id="p2">2021-07-08 ~ 2021-07-08</p>
+                            <p id="p3"><strong>센텀신세계3F</strong></p>
+                            <p id="p4">푸드 포함 15,000원이상 구매 고객에게 로고머그(Tall Size),선착순 300개 증정(요거트,병음료,Grab&GO,바나나 제외)</p>
+                         </div>
+                    </div>
+                </div>
+            </div>
+
+            <hr style="margin-top: 40px; width: 95%;">
+
+            <div id="event" style="margin-top: 20px;">
+                <h2>STORY</h2>
+				<div id="aaa" style="display: flex;">
+					<p id="event-p1">여러분의 이야기를 공유해보세요</p>
+					<div style="float: right;">
+						<h6><button id="button" onclick="editmove()">게시글 등록하기</button></h6>
+					</div>
+				</div>
+            </div>
+
+			<table border="1" id="table">
+				<tr>
+						<th id="th1">no</th>
+						<th id="th2">제목</th>
+				</tr>
+	
+					
+			</table>
+
+			<div class="tm-container-inner tm-features">
+				<div class="row">
+					<div class="col-lg-4">
+						<div class="tm-feature">
+							<i class="fas fa-4x fa-pepper-hot tm-feature-icon"></i>
+							<p class="tm-feature-description">Donec sed orci fermentum, convallis lacus id, tempus elit. Sed eu neque accumsan, porttitor arcu a, interdum est. Donec in risus eu ante.</p>
+							<a href="index.html" class="tm-btn tm-btn-primary">Read More</a>
+						</div>
+					</div>
+					<div class="col-lg-4">
+						<div class="tm-feature">
+							<i class="fas fa-4x fa-seedling tm-feature-icon"></i>
+							<p class="tm-feature-description">Maecenas pretium rutrum molestie. Duis dignissim egestas turpis sit. Nam sed suscipit odio. Morbi in dolor finibus, consequat nisl eget.</p>
+							<a href="index.html" class="tm-btn tm-btn-success">Read More</a>
+						</div>
+					</div>
+					<div class="col-lg-4">
+						<div class="tm-feature">
+							<i class="fas fa-4x fa-cocktail tm-feature-icon"></i>
+							<p class="tm-feature-description">Morbi in dolor finibus, consequat nisl eget, pretium nunc. Maecenas pretium rutrum molestie. Duis dignissim egestas turpis sit.</p>
+							<a href="index.html" class="tm-btn tm-btn-danger">Read More</a>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="tm-container-inner tm-history">
+				<div class="row">
+					<div class="col-12">
+						<div class="tm-history-inner">
+							<img src="./img/coffee11111.jpg" alt="Image" class="img-fluid tm-history-img" />
+							<div class="tm-history-text"> 
+								<h4 class="tm-history-title">History of our coffee</h4>
+								<p class="tm-mb-p">Sed ligula risus, interdum aliquet imperdiet sit amet, auctor sit amet justo. Maecenas posuere lorem id augue interdum vehicula. Praesent sed leo eget libero ultricies congue.</p>
+								<p>Redistributing this template as a downloadable ZIP file on any template collection site is strictly prohibited. You will need to <a href="https://templatemo.com/contact">contact TemplateMo</a> for additional permissions about our templates. Thank you.</p>
+							</div>
+						</div>	
+					</div>
+				</div>
+			</div>
+		</main>
+
+		<footer class="tm-footer text-center">
+			<p>Copyright &copy; 2020 Simple House 
+            
+            | Design: <a rel="nofollow" href="https://templatemo.com">TemplateMo</a></p>
+		</footer>
+	</div>
+	<script src="js/jquery.min.js"></script>
+	<script src="js/parallax.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,88 @@
+#promotion {
+    font-size: 2rem;
+    font-weight: 400;
+    margin-bottom: 30px;
+    font-size: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    font-family: 'Open Sans', Arial, sans-serif;
+}
+
+#event{
+    font-size: 25px;
+    margin-left: 40px;
+    font-family: 'Open Sans', Arial, sans-serif;
+}
+
+#event-p1{
+    font-size: 20px;
+}
+
+#dropbox{
+    height: 30px;
+    width:120px
+}
+
+#button{
+    font-family: 'Open Sans', Arial, sans-serif;
+    color: grey;
+    background-color: white;
+    width: 180px;
+    height: 35px;
+    margin-left: 10px;
+    font-size: 18px;
+    border: solid 1.5px grey;
+    border-radius: 6px;
+}
+
+#button:hover {
+    font-family: 'Open Sans', Arial, sans-serif;
+    color: white;
+    background-color: grey;
+    width: 180px;
+    height: 35px;
+    margin-left: 10px;
+    font-size: 18px;
+    border: solid 1.5px white;
+    border-radius: 6px;
+}
+
+
+#table {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 50px;
+    width: 500px;
+    border-collapse: collapse;
+    border-top: none;
+    border-bottom: none;
+    border-right: none;
+    border-left: none;
+}
+
+#th1{
+    width: 20%;
+    background-color: rgb(99, 98, 98);
+}
+
+#th2{
+    background-color: rgb(99, 98, 98);
+}
+
+tr:nth-child(odd){
+    background-color: rgb(179, 179, 179);
+    text-align: center;
+}
+
+
+
+@media (max-width: 640px){
+    #aaa{
+        flex-direction: column;
+    }
+
+    #button{
+        margin-top: 10px;
+        margin-right: 10px;
+    }
+}
