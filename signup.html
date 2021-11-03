@@ -8,7 +8,7 @@
         <meta http-equiv="X-UA-Compatible" content="ie=edge" />
         <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400" rel="stylesheet" />
         <link href="css/all.min.css" rel="stylesheet" />
-	    <link href="css/signup-test-style.css" rel="stylesheet" />
+	    <link href="css/signup-style.css" rel="stylesheet" />
     </head>
 
     <body>
@@ -43,41 +43,41 @@
                               <col width="30%"/>
                               <col width="auto"/>
                             </colgroup>
-                            <tbody>
-                              <tr>
-                                <th><span>아이디</span></th>
-                                <td><input type="text" placeholder="ID 를 입력하세요."></td>
-                              </tr>
-                              <tr>
-                                <th><span>이름</span></th>
-                                <td><input type="text" placeholder=""></td>
-                              </tr>
-                              <tr>
-                                <th><span>비밀번호</span></th>
-                                <td><input type="password" placeholder="비밀번호를 입력해주세요."></td>
-                              </tr>
-                              <tr>
-                                <th><span>비밀번호 확인</span></th>
-                                <td><input type="password" placeholder="비밀번호를 확인하세요"></td>
-                              </tr>
-                              <tr class="email">
-                                <th><span>이메일</span></th>
-                                <td>
-                                  <input type="text"  class="email" placeholder=""><span class="mar10">@</span>
-                                  <input type="text"  class="email email2" placeholder="">
-                                </td>
-                              </tr>
-                              <tr>
-                                <th><span>휴대폰 번호</span></th>
-                                <td><input type="text" placeholder="전화번호를 입력하세요."></td>
-                              </tr>
-                            </tbody>
+                            <form action="./signup.php" method="post" enctype="application/x-www-form-urlencoded">
+                              <tbody>
+                                <tr>
+                                  <th><span>아이디</span></th>
+                                  <td><input name="id" type="text" placeholder="ID 를 입력하세요."></td>
+                                </tr>
+                                <tr>
+                                  <th><span>이름</span></th>
+                                  <td><input name="name" type="text" placeholder=""></td>
+                                </tr>
+                                <tr>
+                                  <th><span>비밀번호</span></th>
+                                  <td><input name="pw" type="password" placeholder="비밀번호를 입력해주세요."></td>
+                                </tr>
+                                <tr class="email">
+                                  <th><span>이메일</span></th>
+                                  <td>
+                                    <input name="email_1" type="text"  class="email" placeholder=""><span class="mar10">@</span>
+                                    <input name="email_2" type="text"  class="email email2" placeholder="">
+                                  </td>
+                                </tr>
+                                <tr>
+                                  <th><span>휴대폰 번호</span></th>
+                                  <td><input name="tel" type="text" placeholder="전화번호를 입력하세요."></td>
+                                </tr>
+                              </tbody>
+                            
+                            
                           </table>
                           <div class="exform_txt"><span>표시는 필수적으로 입력해주셔야 가입이 가능합니다.</span></div>
                         </div><!-- join_form E  -->
                         <div class="btn_wrap">
-                          <a href="./index.html">회원가입</a>
+                          <input type="submit" id="signupbtn" value="회원가입">
                         </div>
+                      </form>
                       </div> <!-- form_txtInput E -->
                     </div><!-- content E-->
                 </div> <!-- container E -->
