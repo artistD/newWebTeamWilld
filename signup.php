@@ -1,6 +1,6 @@
 <?php
 
-    header('Content-Type:text/plain; charset-utf-8');
+    header('Content-Type:text/html; charset-utf-8');
 
     $id = $_POST['id'];
     $name = $_POST['name'];
@@ -19,8 +19,17 @@
     
     $result = mysqli_query($conn, $sql);
 
-    if($result) echo "회원가입 완료";
-    else echo "회원가입 실패";
+    if($result){
+
+     echo ("
+        <script>
+            alert('회원가입 완료')
+            location.href = 'http://cloudmu7777.dothome.co.kr/newWebTeamWilld/index.html'
+        </script>");
+
+    }else echo "회원가입 실패";
+
+    
 
     mysqli_close($conn);
 
