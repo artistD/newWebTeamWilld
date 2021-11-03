@@ -103,15 +103,15 @@
 
 #th1{
     width: 20%;
-    background-color: rgb(233, 146, 66);
+    background-color: rgb(99, 98, 98);
 }
 
 #th2{
-    background-color: rgb(233, 146, 66);
+    background-color: rgb(99, 98, 98);
 }
 
 tr:nth-child(odd){
-    background-color: burlywood;
+    background-color: rgb(179, 179, 179);
     text-align: center;
 }
 
